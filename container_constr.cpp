@@ -5,9 +5,7 @@ namespace encryption_methods {
   Container::~Container() {clear();}
 
   void Container::clear() {
-    while (len > 0) {
-      delete array[len];
-      --len;
-    }
+    while (len > 0)
+      delete array[--len];
   }
 } // namespace encryption_methods

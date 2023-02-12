@@ -4,9 +4,12 @@
 
 namespace encryption_methods {
   Encryption* Encryption::in(std::ifstream& in_file) {
-    Encryption* encr;
     int key;
     in_file >> key;
+    if (in_file.eof())
+      return 0;
+
+    Encryption* encr;
     switch (key) {
     case REPLACING:
       encr = new Replacing;
