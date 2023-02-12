@@ -9,8 +9,8 @@ namespace encryption_methods {
     std::string first_str, second_str;
   public:
     Cycle() : step(0), first_str(""), second_str("") {}
-    void in_data(std::ifstream &in_file);
-    void out(std::ofstream &out_file);
+    void in_data(std::ifstream& in_file);
+    void out(std::ofstream& out_file);
   };
 } // namespace encryption_methods
 

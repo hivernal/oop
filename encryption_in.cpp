@@ -1,12 +1,12 @@
-#include "cycle.h"
 #include "encryption.h"
+#include "cycle.h"
 #include "replacing.h"
 
 namespace encryption_methods {
-  Encryption *Encryption::in(std::ifstream &in_file) {
+  Encryption* Encryption::in(std::ifstream& in_file) {
+    Encryption* encr;
     int key;
     in_file >> key;
-    Encryption *encr;
     switch (key) {
     case REPLACING:
       encr = new Replacing;
