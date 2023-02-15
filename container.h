@@ -9,11 +9,12 @@ namespace encryption_methods {
     int len;
     Encryption* array[MAX_SIZE];
   public:
+    Container();
+    ~Container();
     void clear();
     void in(std::ifstream &in_file);
     void out(std::ofstream &out_file);
-    Container();
-    ~Container();
+    Encryption* in_data(std::ifstream &in_file);
   };
 } // namespace encryption_methods
 
