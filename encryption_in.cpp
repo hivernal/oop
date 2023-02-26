@@ -20,7 +20,7 @@ namespace encryption_methods {
   default:
     return 0;
   }
-  encr->in_data(in_file);
+  encr->in(in_file);
   return encr;
   }
 } // namespace encryption_methods
