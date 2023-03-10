@@ -4,7 +4,6 @@
 #include <fstream>
 
 namespace encryption_methods {
-  enum {REPLACING = 1, CYCLE};
   class Encryption {
   public:
     virtual ~Encryption() {}

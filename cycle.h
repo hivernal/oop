@@ -3,6 +3,8 @@
 
 #include "encryption.h"
 
+#define CYCLE 2
+
 namespace encryption_methods {
   class Cycle : public Encryption {
     int step;

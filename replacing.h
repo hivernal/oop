@@ -3,6 +3,8 @@
 
 #include "encryption.h"
 
+#define REPLACING 1
+
 namespace encryption_methods {
   class Replacing : public Encryption {
     std::string first_str, second_str;
