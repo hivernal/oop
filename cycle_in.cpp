@@ -2,6 +2,6 @@
 
 namespace encryption_methods {
   void Cycle::in(std::ifstream& in_file) {
-    in_file >> step >> first_str >> second_str;
+    in_file >> step >> first_str >> second_str >> owner;
   }
 } // namespace encryption_methods

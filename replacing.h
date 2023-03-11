@@ -7,9 +7,9 @@
 
 namespace encryption_methods {
   class Replacing : public Encryption {
-    std::string first_str, second_str;
+    std::string first_str, second_str, owner;
   public:
-    Replacing() : first_str(""), second_str("") {}
+    Replacing() : first_str(""), second_str(""), owner("") {}
     void in(std::ifstream& in_file);
     void out(std::ofstream& out_file);
   };
