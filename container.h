@@ -15,6 +15,7 @@ namespace encryption_methods {
     void in(std::ifstream &in_file);
     void out(std::ofstream &out_file);
     Encryption* in_data(std::ifstream &in_file);
+    void sort();
   };
 } // namespace encryption_methods
 
