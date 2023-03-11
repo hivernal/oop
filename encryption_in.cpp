@@ -1,6 +1,7 @@
 #include "container.h"
 #include "cycle.h"
 #include "replacing.h"
+#include "strtonum.h"
 
 namespace encryption_methods {
   Encryption* Container::in_data(std::ifstream& in_file) {
@@ -16,6 +17,9 @@ namespace encryption_methods {
     break;
   case CYCLE:
     encr = new Cycle;
+    break;
+  case STRTONUM:
+    encr = new Strtonum;
     break;
   default:
     return 0;
