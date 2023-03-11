@@ -12,9 +12,10 @@ namespace encryption_methods {
     Container();
     ~Container();
     void clear();
-    void in(std::ifstream &in_file);
-    void out(std::ofstream &out_file);
-    Encryption* in_data(std::ifstream &in_file);
+    void in(std::ifstream& in_file);
+    void out(std::ofstream& out_file);
+    void filtered_out(std::ofstream& out_file, const int type);
+    Encryption* in_data(std::ifstream& in_file);
   };
 } // namespace encryption_methods
 

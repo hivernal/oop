@@ -13,6 +13,7 @@ namespace encryption_methods {
     Cycle() : step(0), first_str(""), second_str("") {}
     void in(std::ifstream& in_file);
     void out(std::ofstream& out_file);
+    void cycle_out(std::ofstream& out_file, const size_t index);
   };
 } // namespace encryption_methods
 

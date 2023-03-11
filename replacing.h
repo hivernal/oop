@@ -12,6 +12,7 @@ namespace encryption_methods {
     Replacing() : first_str(""), second_str("") {}
     void in(std::ifstream& in_file);
     void out(std::ofstream& out_file);
+    void replacing_out(std::ofstream& out_file, const size_t index);
   };
 } // namespace encryption_methods
 

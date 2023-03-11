@@ -24,7 +24,8 @@ int main(int argc, char *argv[]) {
   encryption_methods::Container cont;
   cont.in(in_file);
   out_file << "Filled container. " << std::endl;
-  cont.out(out_file);
+  cont.filtered_out(out_file, 2);
+  // cont.out(out_file);
   cont.clear();
   out_file << "Empty container. " << std::endl;
   std::cout << "Stop" << std::endl;
